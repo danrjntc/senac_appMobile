@@ -1,18 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
-
+      Link Job
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content>
+   <ion-toolbar>
+    <form action="#" class = "formdif">
+      <label for="fname">Nome:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+
+      <label for="lname">Idade:</label><br>
+      <input type="text" id="lname" name="lname" value=""><br>
+
+      <label for="lname">Telefone:</label><br>
+      <input type="number" id="lfone" name="lfone" value=""><br>
+
+      <label for="lname">Endereço:</label><br>
+      <input type="text" id="llocal" name="llocal" value=""><br><br>
+
+      <input type="submit" value="ENVIAR">
+    </form>
+   </ion-toolbar>
 </ion-content>

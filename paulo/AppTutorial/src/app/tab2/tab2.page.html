@@ -1,17 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Link Job
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content>
+   <ion-toolbar>
+    <form action="#">
+      <label for="ffuncao">Função:</label><br>
+      <input type="text" id="ffuncao" name="ffuncao" value=""><br>
+
+      <label for="lexp">Experiência:</label><br>
+      <input type="text" id="lexp" name="lexp" value=""><br>
+
+      <label for="lut">Último trabalho:</label><br>
+      <input type="number" id="lut" name="lut" value=""><br><br>
+
+      <input type="submit" value="GRAVAR">
+    </form>
+   </ion-toolbar>
 </ion-content>
