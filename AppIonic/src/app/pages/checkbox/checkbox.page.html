@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>CheckBox</ion-title>
+    <ion-menu-button slot="start" color="light"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-title>Exemplos estáticos</ion-title>
+  </ion-item>
+  <ion-item>
+    <ion-label>Default</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Disabled</ion-label>
+    <ion-checkbox disabled="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Checked</ion-label>
+    <ion-checkbox checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Disabled + Checked</ion-label>
+    <ion-checkbox checked="true" disabled="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Slot</ion-label>
+    <ion-checkbox slot="start"></ion-checkbox>
+  </ion-item>  
+  <ion-item>
+    <ion-label>Temas</ion-label>
+    <ion-checkbox color="danger"></ion-checkbox>
+  </ion-item>  
+  <ion-item>
+    <ion-title>Meses dinâmicos</ion-title>
+  </ion-item>
+  <ion-list>
+    <ion-item *ngFor="let mes of meses">
+      <ion-label>{{mes.nome}}</ion-label>
+      <ion-checkbox checked="{{mes.marcado}}" color="danger" [(ngModel)]="mes.marcado"></ion-checkbox>
+    </ion-item>  
+  </ion-list>
+  <ion-button expand="block" (click)="listar()" color="success">Listar Meses</ion-button>
+</ion-content>
