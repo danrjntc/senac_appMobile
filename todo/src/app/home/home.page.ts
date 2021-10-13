@@ -96,8 +96,25 @@ export class HomePage {
     actionSheet.present();
   }
 
-  delete(task: any) {
-    this.tasks = this.tasks.filter(taskArray => task != taskArray); 
-    this.updateLocalStorage();
+  async delete(task: any) {
+    const alerta = await this.alertaControl.create({
+      header: 'Deseja realmente apagar?',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancelou a operação');
+          }
+        },{
+          text: 'Apagar',
+          handler: (form) => {
+            this.tasks = this.tasks.filter(taskArray => task != taskArray); 
+            this.updateLocalStorage();
+          }
+        }
+      ]
+    });
+    alerta.present()
   }
 }

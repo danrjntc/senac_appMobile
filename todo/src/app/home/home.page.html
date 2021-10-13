@@ -8,6 +8,10 @@
 
 <ion-content>
   <ion-list>
+    <div *ngIf="!tasks || tasks.length === 0">
+      <p class="alert"> Você não possui tarefas nessa lista. Clique no botão + no canto inferior direito para adicionar tarefas. </p>
+    </div>
+    <div *ngIf="tasks || tasks.lenght === 0">
     <ion-item-sliding *ngFor="let item of tasks">
       <ion-item (click)="openActions(item)">
         <ion-icon slot="start" name="radio-button-off" *ngIf="!item.done"></ion-icon>
@@ -19,8 +23,8 @@
         <ion-item-option (click)="delete(item)">Apagar</ion-item-option>      
       </ion-item-options>
     </ion-item-sliding>
+  </div>
   </ion-list>
-
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="danger" (click)="showAdd()">
       <ion-icon name="add"></ion-icon>
