@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActionSheetController, AlertController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  tasks: any[] = [];
 
-  constructor() {}
+  constructor(private alertaControl: AlertController,
+              private toastControl: ToastController,
+              private actionControl: ActionSheetController) {
+
+    let taskJson = localStorage.getItem('taskDB');
+
+    if(taskJson != null) {
+      this.tasks = JSON.parse(taskJson);
+    }
+  }
 
 }

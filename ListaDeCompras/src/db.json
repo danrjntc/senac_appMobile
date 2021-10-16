@@ -1,0 +1,24 @@
+{
+    "produtos": [
+        {
+            "produto": "Maçã",
+            "quantidade": "10"
+        },
+        {
+            "produto": "Carne",
+            "quantidade": "2kg"
+        },
+        {
+            "produto": "Frango",
+            "quantidade": "1kg"
+        },           
+        {
+            "produto": "Sabão em pó",
+            "quantidade": "1"
+        },
+        {
+            "produto": "Pão",
+            "quantidade": "2"
+        }            
+  ]
+}
