@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ActionSheetController, AlertController, ToastController } from '@ionic/angular';
+import { Produto } from './home.model';
+import { ProdutosService } from './home.service';
 
 @Component({
   selector: 'app-home',
@@ -7,17 +8,13 @@ import { ActionSheetController, AlertController, ToastController } from '@ionic/
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  tasks: any[] = [];
+  produtos!: Produto[];
 
-  constructor(private alertaControl: AlertController,
-              private toastControl: ToastController,
-              private actionControl: ActionSheetController) {
+  constructor(private produtosService: ProdutosService) { }
 
-    let taskJson = localStorage.getItem('taskDB');
-
-    if(taskJson != null) {
-      this.tasks = JSON.parse(taskJson);
-    }
+  ngOnInit(): void {
+    this.produtosService.listarCategorias().subscribe( produtos => this.produtos = produtos);
   }
 
 }
+

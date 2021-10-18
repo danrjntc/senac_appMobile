@@ -1,19 +1,44 @@
 {
-  "posts": [
+  "produtos": [
+      {
+          "produto": "Maçã",
+          "quantidade": "10"
+      },
+      {
+          "produto": "Carne",
+          "quantidade": "2kg"
+      },
+      {
+          "produto": "Frango",
+          "quantidade": "1kg"
+      },           
+      {
+          "produto": "Sabão em pó",
+          "quantidade": "1"
+      },
+      {
+          "produto": "Pão",
+          "quantidade": "2"
+      },
+      {
+        "produto": "Maçã",
+        "quantidade": "10"
+    },
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+        "produto": "Carne",
+        "quantidade": "2kg"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+        "produto": "Frango",
+        "quantidade": "1kg"
+    },           
+    {
+        "produto": "Sabão em pó",
+        "quantidade": "1"
+    },
+    {
+        "produto": "Pão",
+        "quantidade": "2"
+    }                  
+]
 }
