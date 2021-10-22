@@ -6,13 +6,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Bolos', url: '/home/Inbox', icon: 'remove' },
-    { title: 'Cupcakes', url: '/home/Outbox', icon: 'remove' },
-    { title: 'Salgados', url: '/home/Favorites', icon: 'remove' },
-    { title: 'Carrinho', url: '/home/Favorites', icon: 'cart' },
+    { title: 'Início', url: '/pages/home', icon: 'remove' },
+    { title: 'Doces', url: '/pages/doce', icon: 'remove' },
+    { title: 'Salgados', url: '/pages/salgado', icon: 'remove' },
+    { title: 'Carrinho', url: '/pages/carrinho', icon: 'cart' },
+    { title: 'Contatos', url: '/home/Favorites', icon: 'call' },
     { title: 'Login', url: '/home/Favorites', icon: 'person' },
     { title: 'Cadastro', url: '/home/Favorites', icon: 'person-add' },
-    { title: 'Contatos', url: '/home/Favorites', icon: 'call' },
+    
   ]
   constructor() {}
 }

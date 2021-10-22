@@ -1,0 +1,1 @@
+export const LOJA_API = 'http://localhost:3000';

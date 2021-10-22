@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title> DOCES</ion-title>
+    <ion-menu-button slot="start" color="light"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<h1> Catálogo</h1>
+
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor="let item of doce">
+      <ion-card-header>
+        <ion-img [src]="item.img"></ion-img>
+
+
+        <ion-card-title>{{item.produto}}</ion-card-title>
+        <ion-card-title>{{item.preco}}</ion-card-title>
+
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
+
+</ion-content>

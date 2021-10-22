@@ -1,0 +1,81 @@
+{
+    "doce": [
+      {
+        "produto":"Bolo",  
+        "sabor": "Morango com chocolate",
+        "descricao":"",
+        "preço": "R$35,00",
+        "quantidade":"1 unidade",
+        "img": "./assets/bolo.jpg"
+      },
+      {
+        "sabor": "Brigadeiro",
+        "descricao":"Chocolate ou Coco",
+        "preço": "R$50,00",
+        "quantidade":"50 unidades",
+        "img": "./assets/brigadeiros.jpg"
+      },
+      {
+        "produto": "Cupcake", 
+        "sabor": "Baunilha",
+        "descricao":"",
+        "preço": "R$15,00",
+        "quantidade":"1 unidade",
+        "img": "./assets/cupcake.jpg"
+        } 
+
+      ],
+  
+    "salgado": [
+        {
+            "produto": "Esfirra", 
+            "sabor": "Queijo",
+            "descricao":"",
+            "preço": "R$50,00",
+            "quantidade":"20 unidades",
+            "img": "./assets/esfiha.jpg"
+          },
+          {
+            "produto": "Pizza", 
+            "sabor": "Frango c/ Catupiry",
+            "descricao":"",
+            "preço": "R$40,00",
+            "quantidade":"1 unidade",
+            "img": ""
+          },
+          {
+            "produto": "Pastel", 
+            "sabor": "Carne",
+            "descricao":"",
+            "preço": "R$55,00",
+            "quantidade":"30 unidades",
+            "img": ""
+          }    
+      ],
+    "novidades": [
+        {
+            "produto": "Cupcake", 
+            "sabor": "Baunilha",
+            "descricao":"",
+            "preço": "R$15,00",
+            "quantidade":"1 unidade",
+            "img": "./assets/cupcake.jpg"
+          } ,
+          {
+            "produto": "Pizza", 
+            "sabor": "Frango c/ Catupiry",
+            "descricao":"",
+            "preço": "R$40,00",
+            "quantidade":"1 unidade",
+            "img": ""
+          },
+          {
+            "produto": "Pastel", 
+            "sabor": "Carne",
+            "descricao":"",
+            "preço": "R$55,00",
+            "quantidade":"30 unidades",
+            "img": ""
+          }    
+      ]        
+    }
