@@ -1,81 +1,67 @@
 {
-    "doce": [
+  "Doce": [
+  {
+      "produto": "Bolo",
+      "descricao": "Delicioso bolo de chocolate com cobertura de morango",
+      "preco":"R$40,00",
+      "tamanho":"25cm",        
+      "img": "./assets/bolo.jpg"
+  },
+  {
+      "produto": "Cupcake",
+      "descricao": "Feito com baunilha e chocolate amargo",
+      "preco":"R$15,00",
+      "tamanho":"30 unidades",  
+      "img": "./assets/cupcake.jpg"
+  },
+  {
+      "produto": "Brigadeiro",
+      "descricao": "Feito com 50% de cacau os brigadeiros desmancham na boca",
+      "preco":"R$ 50,00",
+      "tamanho":"50 unidades",  
+      "img": "./assets/brigadeiros.jpg"
+  }
+], 
+  "Salgado": [
       {
-        "produto":"Bolo",  
-        "sabor": "Morango com chocolate",
-        "descricao":"",
-        "preço": "R$35,00",
-        "quantidade":"1 unidade",
-        "img": "./assets/bolo.jpg"
+          "produto": "Esfirra",
+          "descricao": "Pequenas esfirras deliciosas de queijo, carne e banana",
+          "preco":"R$9,00 cada unidade",
+          "tamanho":"12cm",  
+          "img": "./assets/esfiha.jpg"
+      }, 
+      {
+          "produto": "Pizza",
+          "descricao": "Bordas com ou sem recheio e um sabor de outro mundo.",
+          "preco":"R$60,00",
+          "tamanho":"35cm",  
+          "img": "./assets/pizza.jpg"
       },
       {
-        "sabor": "Brigadeiro",
-        "descricao":"Chocolate ou Coco",
-        "preço": "R$50,00",
-        "quantidade":"50 unidades",
-        "img": "./assets/brigadeiros.jpg"
-      },
+          "produto": "Pastel",
+          "descricao": "Pastel de forno com bastante recheio e diversos sabores",
+          "preco":"R$8,00",
+          "tamanho":"1 unidade",  
+          "img": "./assets/pastel.jpg"
+      } 
+  ],
+  "Novidades": [
       {
-        "produto": "Cupcake", 
-        "sabor": "Baunilha",
-        "descricao":"",
-        "preço": "R$15,00",
-        "quantidade":"1 unidade",
-        "img": "./assets/cupcake.jpg"
-        } 
+          "produto": "Pizza",
+          "descricao": "Bordas com ou sem recheio e um sabor de outro mundo.",
+          "preco":"R$60,00",
+          "tamanho":"35cm",  
+          "img": "./assets/pizza.jpg"
+      },
+      
+      {
+          "produto": "Pastel",
+          "descricao": "Pastel de forno com bastante recheio e diversos sabores",
+          "preco":"R$8,00",
+          "tamanho":"1 unidade",  
+          "img": "./assets/pastel.jpg"
+      } 
+  ]
+}
+    
 
-      ],
-  
-    "salgado": [
-        {
-            "produto": "Esfirra", 
-            "sabor": "Queijo",
-            "descricao":"",
-            "preço": "R$50,00",
-            "quantidade":"20 unidades",
-            "img": "./assets/esfiha.jpg"
-          },
-          {
-            "produto": "Pizza", 
-            "sabor": "Frango c/ Catupiry",
-            "descricao":"",
-            "preço": "R$40,00",
-            "quantidade":"1 unidade",
-            "img": ""
-          },
-          {
-            "produto": "Pastel", 
-            "sabor": "Carne",
-            "descricao":"",
-            "preço": "R$55,00",
-            "quantidade":"30 unidades",
-            "img": ""
-          }    
-      ],
-    "novidades": [
-        {
-            "produto": "Cupcake", 
-            "sabor": "Baunilha",
-            "descricao":"",
-            "preço": "R$15,00",
-            "quantidade":"1 unidade",
-            "img": "./assets/cupcake.jpg"
-          } ,
-          {
-            "produto": "Pizza", 
-            "sabor": "Frango c/ Catupiry",
-            "descricao":"",
-            "preço": "R$40,00",
-            "quantidade":"1 unidade",
-            "img": ""
-          },
-          {
-            "produto": "Pastel", 
-            "sabor": "Carne",
-            "descricao":"",
-            "preço": "R$55,00",
-            "quantidade":"30 unidades",
-            "img": ""
-          }    
-      ]        
-    }

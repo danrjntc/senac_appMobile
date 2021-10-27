@@ -5,8 +5,29 @@
   </ion-toolbar>
 </ion-header>
 
-<h1> Catálogo </h1>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Catálogo</ion-title>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-card *ngFor="let listar of Salgado">
+      <ion-card-header>
+        <ion-img [src]="listar.img"></ion-img>
+        <br>
+        <ion-card-title> {{listar.produto}}</ion-card-title>  
+        <br>  
+        <ion-textarea>{{listar.descricao}}</ion-textarea>
+        <ion-textarea> <b> TAMANHO: </b><b>{{listar.tamanho}}</b> </ion-textarea>
+        <ion-textarea><b>   PREÇO: </b><b>{{listar.preco}}</b></ion-textarea>
+        <ion-button color="danger"expand="full">Saiba mais</ion-button>
+      </ion-card-header>
+    
+    </ion-card>
+    </ion-list>
 </ion-content>

@@ -10,9 +10,9 @@ export class AppComponent {
     { title: 'Doces', url: '/pages/doce', icon: 'remove' },
     { title: 'Salgados', url: '/pages/salgado', icon: 'remove' },
     { title: 'Carrinho', url: '/pages/carrinho', icon: 'cart' },
-    { title: 'Contatos', url: '/home/Favorites', icon: 'call' },
-    { title: 'Login', url: '/home/Favorites', icon: 'person' },
-    { title: 'Cadastro', url: '/home/Favorites', icon: 'person-add' },
+    { title: 'Contatos', url: '/pages/contatos', icon: 'call' },
+    { title: 'Login', url: '/pages/login', icon: 'person' },
+    { title: 'Cadastro', url: '/pages/cadastro', icon: 'person-add' },
     
   ]
   constructor() {}

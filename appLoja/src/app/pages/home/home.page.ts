@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Novidades } from './home.model';
+import { NovidadesService } from './home.services';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  Novidades!: Novidades[];
+  
+  constructor(private listasService: NovidadesService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.listasService.listarNovidades().subscribe(Novidades => this.Novidades = Novidades);
   }
 
 }

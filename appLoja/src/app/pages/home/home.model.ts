@@ -1,8 +1,5 @@
-export interface Home {
+export interface Novidades {
     produto: string,
-    sabor: string, 
-    descricao: string,
-    preco: number, 
-    quantidade: number,
+    descricao:string,
     img: string,
 }
